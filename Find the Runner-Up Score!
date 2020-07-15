@@ -1,0 +1,12 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    new = []
+    final = []
+    for i in arr:
+        new.append(i)
+    big = max(new)
+    for n in new:
+        if n is not big:
+            final.append(n)
+    print(max(final))
